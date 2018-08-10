@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class JokesController {
 
     @Autowired
-    JokesService jokesService;
+    private JokesService jokesService;
 
     @GetMapping
     public String getJoke(Model model){
